@@ -90,10 +90,5 @@ See the full analysis in the [Jupyter Notebook](https://github.com/ndungek/King-
 Contact me: ndungek66@gmail.com
 
 
-## Repository Structure
-
-![repository structure](images/Capture.PNG)
-
-
 
 
