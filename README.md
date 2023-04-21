@@ -17,17 +17,35 @@ The stakeholder is a Real Estate Developer in a northwestern county who identifi
 
 
 
-## Data
+## Data Understanding
 This project uses the [King County House Sales dataset](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction). The dataset contains information on over 21,000 home sales in King County, Washington, USA between May 2014 and May 2015. The dataset includes a variety of features such as the number of bedrooms and bathrooms, the size of the property, the location of the property, and various other attributes that may influence the sale price of a home.
 
 
+## Modeling
+In this section, we shall be building the models.
 
-## Method
+We will first start by building a baseline model. The baseline model will be used to compare the performance of the other models that we will be building. After that, we will build our multiple linear regression model.
 
-Regression was the algorithm used in building the models. First, we built the baseline model with price as the target variable and sqm_living as the predictor.
-Then we proceeded to add more features and fitted another model which was better than the first one. Since, we had a target for our variance in price, we fitted the final model.
+#### Build Baseline  Model
 
-## Results
+
+The target variable is price. Therefore, we look at the correlation coefficients for all of the predictor variables to find the one with the highest correlation with price.
+
+Our most strongly correlated variable with `price` is `sqm_living`
+
+The model is statistically significant as it explains only 49.3% of the variance in the data. However, it is a good starting point for our analysis. Each prediction is off by about $173,829.
+  
+  - The coefficient of `sqm_living` is about \$3023. This means that for every square meter increase in the house, the price of the house increases by about \$3023.
+
+#### Build Iterated Multiple Linear Regression Model 1
+> We will now iterate the baseline model by building a multiple linear regression model that will have more than one independent variable.
+
+All of the coefficients are statistically significant, and explains about 65% of the variance in price. Each prediction is off by about $ 140,692.20
+
+#### Build Iterated Multiple Linear Regression Model 2
+> We will now build another iterated model.
+
+##Final Model Regression Results
 
 The results showed that:
 
