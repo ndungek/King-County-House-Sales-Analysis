@@ -2,7 +2,9 @@
 
 
 
-#### Authors: Maureen Kitanga, Samuel Kyalo, Priscila Kamiri, Leo Kariuki, Jimcollins Wamae & Steve Githinji
+#### Authors: Maureen Kitang'a, Samuel Kyalo, Priscila Kamiri, Leo Kariuki, Jimcollins Wamae & Steve Githinji
+
+This project is a part of the [Data Science (DSF-FT) Course](https://moringaschool.com/courses/data-science-course/) at [Moringa School](https://moringaschool.com/). The full project description can be found [here](https://github.com/learn-co-curriculum/dsc-phase-2-project-v2-3).
 
 ## Overview
 Real estate developers are interested in identifying factors that influence the sale price of homes in King County, as well as developing models to predict the sale price of homes based on these factors. This information can be used to optimize the design and marketing of new properties, identify investment opportunities, and make data-driven decisions about the development and sale of properties. 
@@ -16,22 +18,14 @@ The stakeholder is a Real Estate Developer in a northwestern county who identifi
 
 
 ## Data
-This project uses the King County House Sales dataset. The dataset contains information on over 21,000 home sales in King County, Washington, USA between May 2014 and May 2015. The dataset includes a variety of features such as the number of bedrooms and bathrooms, the size of the property, the location of the property, and various other attributes that may influence the sale price of a home.
+This project uses the [King County House Sales dataset](https://www.kaggle.com/datasets/harlfoxem/housesalesprediction). The dataset contains information on over 21,000 home sales in King County, Washington, USA between May 2014 and May 2015. The dataset includes a variety of features such as the number of bedrooms and bathrooms, the size of the property, the location of the property, and various other attributes that may influence the sale price of a home.
 
 
 
-## Methods
-The project was done on a jupyter notebook using Python programming language. 
-The packages used were:
-1. pandas
-2. numpy
-3. matplotlib
-4. seaborn
-5. scipy
-6. scikit-learn
-7. plotly
+## Method
 
-Two multiple linear regressions model were built with a baseline simple linear regression with 'prices' used as the target.
+Regression was the algorithm used in building the models. First, we built the baseline model with price as the target variable and sqm_living as the predictor.
+Then we proceeded to add more features and fitted another model which was better than the first one. Since, we had a target for our variance in price, we fitted the final model.
 
 ## Results
 
@@ -54,16 +48,12 @@ An increase in sqm_living count by 1 unit had the second highest associated incr
 
 Compared to zipcode_98103, zipcode_98004 has the highest increase of $462,900 in home price.
 
+## Recommendations
 When building new houses, The Real Estate Developer should therefore prioritize:
 
 increasing the number of bathrooms,
 consider the size(square meters) of the living space
 consider building houses in the postal area of zipcode_98004
-Our final model prediction of the house prices is off by about $109,000.
-
-The study had drawbacks in that it had many missing values.
-
-A further study may be required with a larger dataset for better insights.
 
 
 
@@ -71,14 +61,15 @@ A further study may be required with a larger dataset for better insights.
 
 A further study may be required with a larger dataset for better insights.
 
+More factors like the population in each area may be considered
+
 
 
 ## For More Information
 
-See the full analysis in the [Jupyter Notebook](https://github.com/stevegithinji/King-County-House-Sales-Model/blob/master/King-County-House-Sales-Prediction.ipynb) or review this [presentation](https://github.com/stevegithinji/King-County-House-Sales-Model/blob/master/Powerpoint%20presentation.pptx).
+See the full analysis in the [Jupyter Notebook](https://github.com/ndungek/King-County-House-Sales-Analysis/blob/main/index.ipynb) or review this [presentation](https://1drv.ms/b/s!AiNhn0lGIhsp9E25Dqx67QjOwUSB?e=mVayGL).
 
-
-![another_homes_stock_photo](images/images (1).jpg)
+Contact me: ndungek66@gmail.com
 
 
 ## Repository Structure
